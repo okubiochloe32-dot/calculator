@@ -80,3 +80,32 @@ button{
     color: red;
     background-color: rgb(192, 191, 191);
 }
+
+
+@media (width <= 320px) {
+    .calculator{
+        width: 320px;
+    }
+}
+
+@media (width <= 768px) {
+    .calculator{
+        height: 70vh;
+        width: 340px;
+    }
+}
+@media (width <= 480px) {
+    .calculator{
+        height: 70vh;
+        width: 330px;
+    }
+}
+
+@media (width <= 1024px) {
+    .calculator{
+        height: 80vh;
+        width: 320px;
+    }
+}
+
+
