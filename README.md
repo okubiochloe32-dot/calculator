@@ -1,0 +1,1 @@
+This is a calculator programmed from scratch to suit the coder's mindset.
