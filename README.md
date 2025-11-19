@@ -1,1 +1,1 @@
-This is a calculator programmed from scratch to suit the coder's mindset.
+This is a calculator programmed from scratch to suit the coder's mindset. Programed for all coders to understand
