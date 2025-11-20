@@ -20,50 +20,51 @@ const subtraction = document.querySelector("#subtraction");
 const remove = document.querySelector("#remove");
 const dot = document.querySelector("#dot");
 const equal = document.querySelector("#equal");
+const clickSound = document.querySelector("#clickSound");
 
 let emptyArray = [];
 
 function addValueToScreen(value) {
-    emptyArray.push(value);
-    equationDisplay.innerHTML = emptyArray.join("");
+  emptyArray.push(value);
+  equationDisplay.innerHTML = emptyArray.join("");
 }
 
 function calculateResult() {
-    const arrayConvertedToString = emptyArray.join("");
-    const result = eval(arrayConvertedToString);
-    solutionDisplay.innerHTML = result;
+  const arrayConvertedToString = emptyArray.join("");
+  const result = eval(arrayConvertedToString);
+  solutionDisplay.innerHTML = result;
 }
 
 function clearScreen() {
-    emptyArray = []
-    equationDisplay.innerHTML = 0;
-    solutionDisplay.innerHTML = 0;
+  emptyArray = [];
+  equationDisplay.innerHTML = 0;
+  solutionDisplay.innerHTML = 0;
 }
 
 function deleteValue() {
-    emptyArray.pop();
-    equationDisplay.innerHTML = emptyArray.join("")
+  emptyArray.pop();
+  equationDisplay.innerHTML = emptyArray.join("");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    nine.addEventListener("click", () => addValueToScreen(9));
-    eight.addEventListener("click", () => addValueToScreen(8));
-    seven.addEventListener("click", () => addValueToScreen(7));
-    six.addEventListener("click", () => addValueToScreen(6));
-    five.addEventListener("click", () => addValueToScreen(5));
-    four.addEventListener("click", () => addValueToScreen(4));
-    three.addEventListener("click", () => addValueToScreen(3));
-    two.addEventListener("click", () => addValueToScreen(2));
-    one.addEventListener("click", () => addValueToScreen(1));
-    zero.addEventListener("click", () => addValueToScreen(0));
-    division.addEventListener("click", () => addValueToScreen("/"));
-    multiplication.addEventListener("click", () => addValueToScreen("*"));
-    addition.addEventListener("click", () => addValueToScreen("+"));
-    subtraction.addEventListener("click", () => addValueToScreen("-"));
-    percentage.addEventListener("click", () => addValueToScreen("%"));
-    superscript.addEventListener("click", () => addValueToScreen("**"));
-    dot.addEventListener("click", () => addValueToScreen("."));
-    clearAll.addEventListener("click", () => clearScreen());
-    remove.addEventListener("click", () => deleteValue());
-    equal.addEventListener("click", () => calculateResult())
-})
+  nine.addEventListener("click", () => addValueToScreen(9));
+  eight.addEventListener("click", () => addValueToScreen(8));
+  seven.addEventListener("click", () => addValueToScreen(7));
+  six.addEventListener("click", () => addValueToScreen(6));
+  five.addEventListener("click", () => addValueToScreen(5));
+  four.addEventListener("click", () => addValueToScreen(4));
+  three.addEventListener("click", () => addValueToScreen(3));
+  two.addEventListener("click", () => addValueToScreen(2));
+  one.addEventListener("click", () => addValueToScreen(1));
+  zero.addEventListener("click", () => addValueToScreen(0));
+  division.addEventListener("click", () => addValueToScreen("/"));
+  multiplication.addEventListener("click", () => addValueToScreen("*"));
+  addition.addEventListener("click", () => addValueToScreen("+"));
+  subtraction.addEventListener("click", () => addValueToScreen("-"));
+  percentage.addEventListener("click", () => addValueToScreen("%"));
+  superscript.addEventListener("click", () => addValueToScreen("**"));
+  dot.addEventListener("click", () => addValueToScreen("."));
+  clearAll.addEventListener("click", () => clearScreen());
+  remove.addEventListener("click", () => deleteValue());
+  equal.addEventListener("click", () => calculateResult());
+});
